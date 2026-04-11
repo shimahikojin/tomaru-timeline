@@ -11,8 +11,8 @@
 
   body {
     font-family: 'Noto Sans JP', sans-serif;
-    background: #0a0a0f;
-    color: #e0e0e0;
+    background: #ffffff;
+    color: #37352f;
     overflow-x: auto;
     overflow-y: hidden;
     height: 100vh;
@@ -23,7 +23,7 @@
     position: fixed;
     top: 0; left: 0; right: 0;
     z-index: 100;
-    background: linear-gradient(180deg, #0a0a0f 60%, transparent);
+    background: linear-gradient(180deg, #ffffff 60%, transparent);
     padding: 24px 40px 40px;
     pointer-events: none;
   }
@@ -31,14 +31,12 @@
     font-size: 28px;
     font-weight: 900;
     letter-spacing: 2px;
-    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #37352f;
     pointer-events: auto;
   }
   .header .sub {
     font-size: 13px;
-    color: #666;
+    color: #999;
     margin-top: 4px;
     font-weight: 300;
   }
@@ -63,12 +61,12 @@
     cursor: pointer;
     padding: 4px 10px;
     border-radius: 20px;
-    border: 1px solid #222;
-    background: #111;
+    border: 1px solid #e0e0e0;
+    background: #f7f6f3;
     transition: all 0.3s;
     user-select: none;
   }
-  .legend-item:hover { border-color: #444; }
+  .legend-item:hover { border-color: #ccc; }
   .legend-item.inactive { opacity: 0.3; }
   .legend-dot {
     width: 8px; height: 8px;
@@ -84,24 +82,25 @@
     z-index: 100;
     display: flex;
     gap: 8px;
-    background: rgba(20,20,30,0.9);
+    background: rgba(255,255,255,0.95);
     backdrop-filter: blur(12px);
     padding: 8px 16px;
     border-radius: 30px;
-    border: 1px solid #222;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   }
   .filter-btn {
     font-family: 'Noto Sans JP', sans-serif;
     font-size: 12px;
     padding: 6px 14px;
     border-radius: 20px;
-    border: 1px solid #333;
+    border: 1px solid #ddd;
     background: transparent;
-    color: #888;
+    color: #666;
     cursor: pointer;
     transition: all 0.3s;
   }
-  .filter-btn:hover { border-color: #666; color: #ccc; }
+  .filter-btn:hover { border-color: #aaa; color: #333; }
   .filter-btn.active {
     background: #ff6b35;
     border-color: #ff6b35;
@@ -132,7 +131,7 @@
     left: 0;
     right: 0;
     height: 3px;
-    background: linear-gradient(90deg, transparent, #333 2%, #333 98%, transparent);
+    background: linear-gradient(90deg, transparent, #d0d0d0 2%, #d0d0d0 98%, transparent);
     transform: translateY(-50%);
   }
 
@@ -177,7 +176,7 @@
     transform: translate(-50%, -50%);
     font-size: 20px;
     font-weight: 900;
-    color: #2a2a35;
+    color: #e8e5e0;
     letter-spacing: 3px;
   }
 
@@ -249,15 +248,16 @@
     transform: translateX(-50%);
     width: 200px;
     padding: 10px 14px;
-    background: rgba(20, 20, 30, 0.95);
+    background: rgba(255, 255, 255, 0.97);
     border: 1px solid var(--node-color);
     border-radius: 12px;
     backdrop-filter: blur(8px);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
     transition: all 0.3s;
   }
   .event-node:hover .event-card {
-    background: rgba(30, 30, 45, 0.98);
-    box-shadow: 0 8px 32px rgba(0,0,0,0.5), 0 0 20px rgba(255,107,53,0.1);
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.12), 0 0 0 1px var(--node-color);
   }
   .event-node.above .event-card { bottom: 100%; margin-bottom: 8px; }
   .event-node.below .event-card { top: 100%; margin-top: 8px; }
@@ -272,11 +272,11 @@
     font-size: 12px;
     font-weight: 500;
     line-height: 1.5;
-    color: #e8e8e8;
+    color: #37352f;
   }
   .event-node.turning-point .event-title {
     font-weight: 700;
-    color: #fff;
+    color: #1a1a1a;
   }
   .event-badge {
     display: inline-block;
@@ -290,7 +290,7 @@
   }
   .event-memo {
     font-size: 10px;
-    color: #777;
+    color: #888;
     margin-top: 6px;
     line-height: 1.4;
     display: none;
@@ -308,9 +308,9 @@
 
   /* ── Scrollbar ── */
   ::-webkit-scrollbar { height: 6px; }
-  ::-webkit-scrollbar-track { background: #111; }
-  ::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }
-  ::-webkit-scrollbar-thumb:hover { background: #555; }
+  ::-webkit-scrollbar-track { background: #f7f6f3; }
+  ::-webkit-scrollbar-thumb { background: #ccc; border-radius: 3px; }
+  ::-webkit-scrollbar-thumb:hover { background: #aaa; }
 
   /* ── Scroll hint ── */
   .scroll-hint {
@@ -319,7 +319,7 @@
     left: 50%;
     transform: translateX(-50%);
     font-size: 11px;
-    color: #444;
+    color: #bbb;
     animation: fadeHint 3s ease-in-out forwards;
     pointer-events: none;
   }
