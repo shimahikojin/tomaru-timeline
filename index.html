@@ -334,6 +334,7 @@
 <div class="header">
   <h1>TOMARU MEDICA TIMELINE</h1>
   <div class="sub">2025.11 — 2026.04 ｜ 事業の軌跡</div>
+
 </div>
 
 <div class="legend" id="legend"></div>
@@ -477,11 +478,22 @@ const events = [
   // ── 4/13 ──
   { date: '2026-04-13', title: 'SVP東京ヒアリング対象に選出', domain: '資金調達', impact: 'ターニングポイント', memo: '63団体が応募、最終6団体の投資対象へ。山際さんは運営側 🏆' },
   { date: '2026-04-13', title: '南魚沼市・倉田理事とZoom面談', domain: 'ネットワーク', impact: '前進', memo: '旅行会社30年×地域活性の倉田智浩理事と。看護師不足×観光×医療連携・現地視察の可能性を議論。一緒に事業できる可能性大' },
+
+  // ── 4/14 - 4/20 新規追加 ──
+  { date: '2026-04-14', title: 'QWSスクランブルミーティング→メンター5名から個別メンタリング', domain: 'ネットワーク', impact: '前進', memo: 'SHIBUYA QWS。地方展開の優位性・ソーシャル不動産ファンド・研究エビデンスの重要性・ステークホルダー設計の示唆を獲得' },
+  { date: '2026-04-14', title: 'ルートインとベッド柵問題解決→搬入形式で決定', domain: 'ホテル検証', impact: '前進', memo: '山下看護師へ方針報告完了。患者受け入れ準備が前進' },
+  { date: '2026-04-16', title: 'りらのいえ2年ぶり訪問→当直ボランティア決定', domain: 'ヒアリング', impact: 'ターニングポイント', memo: '患者・家族の体験を直接知るための行動へ。オンライン体験日記プラットフォーム構想も浮上。初心を取り戻す' },
+  { date: '2026-04-16', title: 'レオスキャピタル藤野さん囲む会→大手不動産投資家紹介へ', domain: 'ネットワーク', impact: '前進', memo: 'makersで。藤野さんから大手不動産系投資家の紹介を約束' },
+  { date: '2026-04-19', title: '田島先生とファイナンス設計MTG@虎ノ門ヒルズ', domain: '法人運営', impact: '前進', memo: 'ファイナンス設計と右腕COO探しをテーマに確立。虎ノ門ヒルズでモメンタム上昇' },
+  { date: '2026-04-19', title: 'Tomaru Navigatorプロジェクト発案', domain: 'プロダクト', impact: '前進', memo: 'サイ・カキの得意分野を活かした新プロジェクト。マネタイズ軸で設計し資料化' },
+  { date: '2026-04-20', title: '社内全員参加定例MTG開始', domain: 'チーム', impact: '前進', memo: '初の全員参加定例MTG。議事録・定例ルールを策定。音声文字起こしでアウトプット' },
+  { date: '2026-04-20', title: '鈴代三和建物に患者レジデンス物件打診', domain: '法人運営', impact: '前進', memo: '実家の不動産会社に患者宿泊向け物件を探していると伝達' },
+  { date: '2026-04-20', title: '狩野先生へALS患者拠点構想メール送付', domain: '病院連携', impact: '前進', memo: '企業スポンサー巻き込みのALS拠点構想を提示。ルートインは代替案として設計' },
 ];
 
 // ── Compute layout ──
 const startDate = new Date('2025-11-15');
-const endDate = new Date('2026-04-20');
+const endDate = new Date('2026-05-15');
 const totalDays = (endDate - startDate) / (1000 * 60 * 60 * 24);
 const PX_PER_DAY = 22;
 const totalWidth = totalDays * PX_PER_DAY;
