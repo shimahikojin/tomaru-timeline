@@ -333,7 +333,7 @@
 
 <div class="header">
   <h1>TOMARU MEDICA TIMELINE</h1>
-  <div class="sub">2025.11 — 2026.05.26 ｜ 事業の軌跡</div>
+  <div class="sub">2025.11 — 2026.06.03 ｜ 事業の軌跡</div>
 
 </div>
 
@@ -537,11 +537,17 @@ const events = [
   { date: '2026-05-25', title: '奈緒子さん→家入一真さんへ紹介確定', domain: 'ネットワーク', impact: 'ターニングポイント', memo: 'STORES共同代表の奈緒子メンターが家入一真さん（CAMPFIRE創業者）に直接連絡してくれることに 🤝' },
   { date: '2026-05-26', title: '伊藤さん（不動産ファンド経験者）対面アポ確定（6/9広尾）', domain: '資金調達', impact: 'ターニングポイント', memo: 'QWS山本敏行さん紹介の伊藤さん。医療共助型レジデンスファンドに前職経験が近い。対面確定 🏛️' },
   { date: '2026-05-26', title: '新潟県魚沼市訪問アポ確定（6/10-11倉田理事と）', domain: 'ネットワーク', impact: '前進', memo: '南魚沼市みらい塾・倉田智浩理事と現地視察決定。看護師不足×観光×医療連携の地方展開へ' },
+
+  // ── リスト6 追加分 (5/29 - 6/3) ──
+  { date: '2026-05-29', title: 'Tomaru Medica一般社団法人化プラン＋事業計画書策定', domain: '法人運営', impact: 'ターニングポイント', memo: 'ホテル連携事業を一般社団法人として独立させる構想を確立。人に共有できるレベルの社団法人事業計画書を作成。共助型医療不動産ファンドとの構造分離が形に 🔥' },
+  { date: '2026-06-01', title: 'ANRI河野さん・丸山さんからメンタリング', domain: '資金調達', impact: 'ターニングポイント', memo: 'トップVC ANRIから。河野さんのアドバイスが深く刺さり背中を押された。「河野さんになら出資されてもいい」と思える信頼関係。即御礼メール送付 🏛️' },
+  { date: '2026-06-03', title: '一般社団法人化プランが複数メンターから高評価', domain: '法人運営', impact: '前進', memo: 'やすのぶさんが即電話で「背中を押すいいプラン」と具体アドバイス。ANRI・奈緒子ゼミでも肯定され行動閾値が下がり一気にアクション。白鳥・小原先生らにも展開' },
+  { date: '2026-06-03', title: '菅田さん経由で看護師フルコミット候補を勧誘', domain: 'チーム', impact: '前進', memo: '30代の現役看護師。以前会って好印象だった人材。フルコミットでのチーム拡大の動き' },
 ];
 
 // ── Compute layout ──
 const startDate = new Date('2025-11-15');
-const endDate = new Date('2026-05-30');
+const endDate = new Date('2026-06-10');
 const totalDays = (endDate - startDate) / (1000 * 60 * 60 * 24);
 const PX_PER_DAY = 22;
 const totalWidth = totalDays * PX_PER_DAY;
@@ -562,7 +568,8 @@ const months = [
   { date: '2026-02-01', label: '2月' },
   { date: '2026-03-01', label: '3月' },
   { date: '2026-04-01', label: '4月' },
-  { date: '2026-05-01', label: '5月' }
+  { date: '2026-05-01', label: '5月' },
+  { date: '2026-06-01', label: '6月' }
 ];
 months.forEach(m => {
   const x = dayOffset(m.date);
